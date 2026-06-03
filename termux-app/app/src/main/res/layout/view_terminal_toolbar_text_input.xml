@@ -5,12 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:imeOptions="actionSend|flagNoFullscreen"
-    android:maxLines="1"
+    android:maxLines="3"
     android:inputType="text"
     android:importantForAutofill="no"
-    android:textColor="@android:color/white"
+    
+    
+    android:background="@drawable/edittextarea_background"
+    
+    
+    android:textColor="#FFFFFF"
+    android:textColorHint="#888888"
     android:textColorHighlight="@android:color/darker_gray"
-    android:paddingTop="0dp"
+    android:textSize="16sp"
+    android:fontFamily="sans-serif-monospace"
+    android:textStyle="normal"
+    
+    
+    android:padding="12dp"
     android:textCursorDrawable="@null"
-    android:paddingBottom="0dp"
     tools:ignore="LabelFor" />
+<!--edit the look of the text input field-->
+<!-- Custom Background Drawable -->
+<!-- Text Customizations -->
+<!-- Spacing & Cursor -->

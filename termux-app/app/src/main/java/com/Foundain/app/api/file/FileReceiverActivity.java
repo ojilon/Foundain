@@ -1,4 +1,4 @@
-package com.termux.app.api.file;
+package com.Foundain.app.api.file;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,7 +21,7 @@ import com.termux.shared.termux.interact.TextInputDialogUtils;
 import com.termux.shared.termux.TermuxConstants;
 import com.termux.shared.termux.TermuxConstants.TERMUX_APP;
 import com.termux.shared.termux.TermuxConstants.TERMUX_APP.TERMUX_SERVICE;
-import com.termux.app.TermuxService;
+import com.Foundain.app.TermuxService;
 import com.termux.shared.logger.Logger;
 import com.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
 import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;

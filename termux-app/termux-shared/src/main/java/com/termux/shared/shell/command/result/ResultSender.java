@@ -1,4 +1,4 @@
-package com.termux.shared.shell.command.result;
+package com.Foundain.shared.shell.command.result;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -6,15 +6,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.termux.shared.R;
-import com.termux.shared.data.DataUtils;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.errors.FunctionErrno;
-import com.termux.shared.android.AndroidUtils;
-import com.termux.shared.shell.command.ShellCommandConstants.RESULT_SENDER;
+import com.Foundain.shared.R;
+import com.Foundain.shared.data.DataUtils;
+import com.Foundain.shared.markdown.MarkdownUtils;
+import com.Foundain.shared.errors.Error;
+import com.Foundain.shared.file.FileUtils;
+import com.Foundain.shared.logger.Logger;
+import com.Foundain.shared.errors.FunctionErrno;
+import com.Foundain.shared.android.AndroidUtils;
+import com.Foundain.shared.shell.command.ShellCommandConstants.RESULT_SENDER;
 
 public class ResultSender {
 

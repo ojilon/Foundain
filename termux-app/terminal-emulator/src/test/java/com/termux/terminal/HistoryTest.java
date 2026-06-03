@@ -1,4 +1,4 @@
-package com.termux.terminal;
+package com.Foundain.terminal;
 
 
 public class HistoryTest extends TerminalTestCase {

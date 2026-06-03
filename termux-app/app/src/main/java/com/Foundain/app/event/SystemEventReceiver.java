@@ -1,4 +1,4 @@
-package com.termux.app.event;
+package com.Foundain.app.event;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

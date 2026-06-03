@@ -1,4 +1,4 @@
-package com.termux.app.activities;
+package com.Foundain.app.activities;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;

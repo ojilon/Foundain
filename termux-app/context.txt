@@ -195,7 +195,7 @@
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\RunCommandService.java">
-package com.termux.app;
+package com.Foundain.app;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.Service;
@@ -236,7 +236,7 @@ public class RunCommandService extends Service {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\TermuxActivity.java">
-package com.termux.app;
+package com.Foundain.app;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
@@ -263,10 +263,10 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 import com.termux.R;
-import com.termux.app.api.file.FileReceiverActivity;
-import com.termux.app.terminal.TermuxActivityRootView;
-import com.termux.app.terminal.TermuxTerminalSessionActivityClient;
-import com.termux.app.terminal.io.TermuxTerminalExtraKeys;
+import com.Foundain.app.api.file.FileReceiverActivity;
+import com.Foundain.app.terminal.TermuxActivityRootView;
+import com.Foundain.app.terminal.TermuxTerminalSessionActivityClient;
+import com.Foundain.app.terminal.io.TermuxTerminalExtraKeys;
 import com.termux.shared.activities.ReportActivity;
 import com.termux.shared.activity.ActivityUtils;
 import com.termux.shared.activity.media.AppCompatActivityUtils;
@@ -275,13 +275,13 @@ import com.termux.shared.android.PermissionUtils;
 import com.termux.shared.data.DataUtils;
 import com.termux.shared.termux.TermuxConstants;
 import com.termux.shared.termux.TermuxConstants.TERMUX_APP.TERMUX_ACTIVITY;
-import com.termux.app.activities.HelpActivity;
-import com.termux.app.activities.SettingsActivity;
+import com.Foundain.app.activities.HelpActivity;
+import com.Foundain.app.activities.SettingsActivity;
 import com.termux.shared.termux.crash.TermuxCrashUtils;
 import com.termux.shared.termux.settings.preferences.TermuxAppSharedPreferences;
-import com.termux.app.terminal.TermuxSessionsListViewController;
-import com.termux.app.terminal.io.TerminalToolbarViewPager;
-import com.termux.app.terminal.TermuxTerminalViewClient;
+import com.Foundain.app.terminal.TermuxSessionsListViewController;
+import com.Foundain.app.terminal.io.TerminalToolbarViewPager;
+import com.Foundain.app.terminal.TermuxTerminalViewClient;
 import com.termux.shared.termux.extrakeys.ExtraKeysView;
 import com.termux.shared.termux.interact.TextInputDialogUtils;
 import com.termux.shared.logger.Logger;
@@ -398,7 +398,7 @@ public final class TermuxActivity extends AppCompatActivity implements ServiceCo
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\TermuxApplication.java">
-package com.termux.app;
+package com.Foundain.app;
 import android.app.Application;
 import android.content.Context;
 import com.termux.BuildConfig;
@@ -421,7 +421,7 @@ public class TermuxApplication extends Application {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\TermuxInstaller.java">
-package com.termux.app;
+package com.Foundain.app;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -468,7 +468,7 @@ final class TermuxInstaller {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\TermuxOpenReceiver.java">
-package com.termux.app;
+package com.Foundain.app;
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.ContentValues;
@@ -507,7 +507,7 @@ public class TermuxOpenReceiver extends BroadcastReceiver {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\TermuxService.java">
-package com.termux.app;
+package com.Foundain.app;
 import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -525,9 +525,9 @@ import android.os.PowerManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.termux.R;
-import com.termux.app.event.SystemEventReceiver;
-import com.termux.app.terminal.TermuxTerminalSessionActivityClient;
-import com.termux.app.terminal.TermuxTerminalSessionServiceClient;
+import com.Foundain.app.event.SystemEventReceiver;
+import com.Foundain.app.terminal.TermuxTerminalSessionActivityClient;
+import com.Foundain.app.terminal.TermuxTerminalSessionServiceClient;
 import com.termux.shared.termux.plugins.TermuxPluginUtils;
 import com.termux.shared.data.IntentUtils;
 import com.termux.shared.net.uri.UriUtils;
@@ -615,7 +615,7 @@ public final class TermuxService extends Service implements AppShell.AppShellCli
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\activities\HelpActivity.java">
-package com.termux.app.activities;
+package com.Foundain.app.activities;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
@@ -636,7 +636,7 @@ public final class HelpActivity extends AppCompatActivity {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\activities\SettingsActivity.java">
-package com.termux.app.activities;
+package com.Foundain.app.activities;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Environment;
@@ -648,7 +648,7 @@ import com.termux.R;
 import com.termux.shared.activities.ReportActivity;
 import com.termux.shared.file.FileUtils;
 import com.termux.shared.models.ReportInfo;
-import com.termux.app.models.UserAction;
+import com.Foundain.app.models.UserAction;
 import com.termux.shared.interact.ShareUtils;
 import com.termux.shared.android.PackageUtils;
 import com.termux.shared.termux.settings.preferences.TermuxAPIAppSharedPreferences;
@@ -676,7 +676,7 @@ public class SettingsActivity extends AppCompatActivity {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\api\file\FileReceiverActivity.java">
-package com.termux.app.api.file;
+package com.Foundain.app.api.file;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -696,7 +696,7 @@ import com.termux.shared.termux.interact.TextInputDialogUtils;
 import com.termux.shared.termux.TermuxConstants;
 import com.termux.shared.termux.TermuxConstants.TERMUX_APP;
 import com.termux.shared.termux.TermuxConstants.TERMUX_APP.TERMUX_SERVICE;
-import com.termux.app.TermuxService;
+import com.Foundain.app.TermuxService;
 import com.termux.shared.logger.Logger;
 import com.termux.shared.termux.settings.properties.TermuxAppSharedProperties;
 import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;
@@ -719,7 +719,7 @@ public class FileReceiverActivity extends AppCompatActivity {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\event\SystemEventReceiver.java">
-package com.termux.app.event;
+package com.Foundain.app.event;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -745,7 +745,7 @@ public class SystemEventReceiver extends BroadcastReceiver {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\TermuxAPIPreferencesFragment.java">
-package com.termux.app.fragments.settings;
+package com.Foundain.app.fragments.settings;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -765,7 +765,7 @@ class TermuxAPIPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\TermuxFloatPreferencesFragment.java">
-package com.termux.app.fragments.settings;
+package com.Foundain.app.fragments.settings;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -785,7 +785,7 @@ class TermuxFloatPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\TermuxPreferencesFragment.java">
-package com.termux.app.fragments.settings;
+package com.Foundain.app.fragments.settings;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -805,7 +805,7 @@ class TermuxPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\TermuxTaskerPreferencesFragment.java">
-package com.termux.app.fragments.settings;
+package com.Foundain.app.fragments.settings;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -825,7 +825,7 @@ class TermuxTaskerPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\TermuxWidgetPreferencesFragment.java">
-package com.termux.app.fragments.settings;
+package com.Foundain.app.fragments.settings;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -845,7 +845,7 @@ class TermuxWidgetPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\termux\DebuggingPreferencesFragment.java">
-package com.termux.app.fragments.settings.termux;
+package com.Foundain.app.fragments.settings.termux;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -876,7 +876,7 @@ class DebuggingPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\termux\TerminalIOPreferencesFragment.java">
-package com.termux.app.fragments.settings.termux;
+package com.Foundain.app.fragments.settings.termux;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -898,7 +898,7 @@ class TerminalIOPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\termux\TerminalViewPreferencesFragment.java">
-package com.termux.app.fragments.settings.termux;
+package com.Foundain.app.fragments.settings.termux;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -920,7 +920,7 @@ class TerminalViewPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\termux_api\DebuggingPreferencesFragment.java">
-package com.termux.app.fragments.settings.termux_api;
+package com.Foundain.app.fragments.settings.termux_api;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -947,7 +947,7 @@ class DebuggingPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\termux_float\DebuggingPreferencesFragment.java">
-package com.termux.app.fragments.settings.termux_float;
+package com.Foundain.app.fragments.settings.termux_float;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -976,7 +976,7 @@ class DebuggingPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\termux_tasker\DebuggingPreferencesFragment.java">
-package com.termux.app.fragments.settings.termux_tasker;
+package com.Foundain.app.fragments.settings.termux_tasker;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -1003,7 +1003,7 @@ class DebuggingPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\fragments\settings\termux_widget\DebuggingPreferencesFragment.java">
-package com.termux.app.fragments.settings.termux_widget;
+package com.Foundain.app.fragments.settings.termux_widget;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.Keep;
@@ -1030,14 +1030,14 @@ class DebuggingPreferencesDataStore extends PreferenceDataStore {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\models\UserAction.java">
-package com.termux.app.models;
+package com.Foundain.app.models;
 public enum UserAction {
     private final String name;
     public String getName() {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\TermuxActivityRootView.java">
-package com.termux.app.terminal;
+package com.Foundain.app.terminal;
 import android.content.Context;
 import android.graphics.Rect;
 import android.inputmethodservice.InputMethodService;
@@ -1051,7 +1051,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 import androidx.core.view.WindowInsetsCompat;
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 import com.termux.shared.logger.Logger;
 import com.termux.shared.view.ViewUtils;
 public class TermuxActivityRootView extends LinearLayout implements ViewTreeObserver.OnGlobalLayoutListener {
@@ -1075,7 +1075,7 @@ public class TermuxActivityRootView extends LinearLayout implements ViewTreeObse
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\TermuxSessionsListViewController.java">
-package com.termux.app.terminal;
+package com.Foundain.app.terminal;
 import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -1093,7 +1093,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import com.termux.R;
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 import com.termux.shared.termux.shell.command.runner.terminal.TermuxSession;
 import com.termux.shared.theme.NightMode;
 import com.termux.shared.theme.ThemeUtils;
@@ -1107,7 +1107,7 @@ public class TermuxSessionsListViewController extends ArrayAdapter<TermuxSession
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\TermuxTerminalSessionActivityClient.java">
-package com.termux.app.terminal;
+package com.Foundain.app.terminal;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -1126,10 +1126,10 @@ import com.termux.R;
 import com.termux.shared.interact.ShareUtils;
 import com.termux.shared.termux.shell.command.runner.terminal.TermuxSession;
 import com.termux.shared.termux.interact.TextInputDialogUtils;
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 import com.termux.shared.termux.terminal.TermuxTerminalSessionClientBase;
 import com.termux.shared.termux.TermuxConstants;
-import com.termux.app.TermuxService;
+import com.Foundain.app.TermuxService;
 import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;
 import com.termux.shared.termux.terminal.io.BellHandler;
 import com.termux.shared.logger.Logger;
@@ -1184,10 +1184,10 @@ public class TermuxTerminalSessionActivityClient extends TermuxTerminalSessionCl
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\TermuxTerminalSessionServiceClient.java">
-package com.termux.app.terminal;
+package com.Foundain.app.terminal;
 import android.app.Service;
 import androidx.annotation.NonNull;
-import com.termux.app.TermuxService;
+import com.Foundain.app.TermuxService;
 import com.termux.shared.termux.shell.command.runner.terminal.TermuxSession;
 import com.termux.shared.termux.terminal.TermuxTerminalSessionClientBase;
 import com.termux.terminal.TerminalSession;
@@ -1201,7 +1201,7 @@ public class TermuxTerminalSessionServiceClient extends TermuxTerminalSessionCli
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\TermuxTerminalViewClient.java">
-package com.termux.app.terminal;
+package com.Foundain.app.terminal;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.ClipData;
@@ -1219,7 +1219,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 import com.termux.R;
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 import com.termux.shared.file.FileUtils;
 import com.termux.shared.interact.MessageDialogUtils;
 import com.termux.shared.interact.ShareUtils;
@@ -1231,8 +1231,8 @@ import com.termux.shared.android.AndroidUtils;
 import com.termux.shared.termux.TermuxConstants;
 import com.termux.shared.activities.ReportActivity;
 import com.termux.shared.models.ReportInfo;
-import com.termux.app.models.UserAction;
-import com.termux.app.terminal.io.KeyboardShortcut;
+import com.Foundain.app.models.UserAction;
+import com.Foundain.app.terminal.io.KeyboardShortcut;
 import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;
 import com.termux.shared.data.DataUtils;
 import com.termux.shared.logger.Logger;
@@ -1301,11 +1301,11 @@ public class TermuxTerminalViewClient extends TermuxTerminalViewClientBase {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\io\FullScreenWorkAround.java">
-package com.termux.app.terminal.io;
+package com.Foundain.app.terminal.io;
 import android.graphics.Rect;
 import android.view.View;
 import android.view.ViewGroup;
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 public class FullScreenWorkAround {
     private final View mChildOfContent;
     private int mUsableHeightPrevious;
@@ -1319,7 +1319,7 @@ public class FullScreenWorkAround {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\io\KeyboardShortcut.java">
-package com.termux.app.terminal.io;
+package com.Foundain.app.terminal.io;
 public class KeyboardShortcut {
     public final int codePoint;
     public final int shortcutAction;
@@ -1327,7 +1327,7 @@ public class KeyboardShortcut {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\io\TerminalToolbarViewPager.java">
-package com.termux.app.terminal.io;
+package com.Foundain.app.terminal.io;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -1336,7 +1336,7 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import com.termux.R;
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 import com.termux.shared.termux.extrakeys.ExtraKeysView;
 import com.termux.terminal.TerminalSession;
 public class TerminalToolbarViewPager {
@@ -1352,15 +1352,15 @@ public class TerminalToolbarViewPager {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\app\terminal\io\TermuxTerminalExtraKeys.java">
-package com.termux.app.terminal.io;
+package com.Foundain.app.terminal.io;
 import android.annotation.SuppressLint;
 import android.view.Gravity;
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.drawerlayout.widget.DrawerLayout;
-import com.termux.app.TermuxActivity;
-import com.termux.app.terminal.TermuxTerminalSessionActivityClient;
-import com.termux.app.terminal.TermuxTerminalViewClient;
+import com.Foundain.app.TermuxActivity;
+import com.Foundain.app.terminal.TermuxTerminalSessionActivityClient;
+import com.Foundain.app.terminal.TermuxTerminalViewClient;
 import com.termux.shared.logger.Logger;
 import com.termux.shared.termux.extrakeys.ExtraKeysConstants;
 import com.termux.shared.termux.extrakeys.ExtraKeysInfo;
@@ -1378,7 +1378,7 @@ public class TermuxTerminalExtraKeys extends TerminalExtraKeys {
 </file>
 
 <file path=".\app\src\main\java\com\Foundain\filepicker\TermuxDocumentsProvider.java">
-package com.termux.filepicker;
+package com.Foundain.filepicker;
 import android.content.res.AssetFileDescriptor;
 import android.database.Cursor;
 import android.database.MatrixCursor;
@@ -1580,7 +1580,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
 </file>
 
 <file path=".\app\src\main\res\layout\activity_termux.xml">
-<com.termux.app.terminal.TermuxActivityRootView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.Foundain.app.terminal.TermuxActivityRootView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_termux_root_view"
@@ -1678,7 +1678,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/transparent" />
-</com.termux.app.terminal.TermuxActivityRootView>
+</com.Foundain.app.terminal.TermuxActivityRootView>
 </file>
 
 <file path=".\app\src\main\res\layout\item_terminal_sessions_list.xml">
@@ -1778,7 +1778,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
 <file path=".\app\src\main\res\values\strings.xml">
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE resources [
-    <!ENTITY TERMUX_PACKAGE_NAME "com.Foundain">
+    <!ENTITY TERMUX_PACKAGE_NAME "com.termux">
     <!ENTITY TERMUX_APP_NAME "Foundain">
     <!ENTITY TERMUX_API_APP_NAME "Termux:API">
     <!ENTITY TERMUX_BOOT_APP_NAME "Termux:Boot">
@@ -2037,31 +2037,31 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
         app:key="termux"
         app:title="@string/termux_preferences_title"
         app:summary="@string/termux_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.TermuxPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.TermuxPreferencesFragment"/>
     <Preference
         app:key="termux_api"
         app:title="@string/termux_api_preferences_title"
         app:summary="@string/termux_api_preferences_summary"
         app:isPreferenceVisible="false"
-        app:fragment="com.termux.app.fragments.settings.TermuxAPIPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.TermuxAPIPreferencesFragment"/>
     <Preference
         app:key="termux_float"
         app:title="@string/termux_float_preferences_title"
         app:summary="@string/termux_float_preferences_summary"
         app:isPreferenceVisible="false"
-        app:fragment="com.termux.app.fragments.settings.TermuxFloatPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.TermuxFloatPreferencesFragment"/>
     <Preference
         app:key="termux_tasker"
         app:title="@string/termux_tasker_preferences_title"
         app:summary="@string/termux_tasker_preferences_summary"
         app:isPreferenceVisible="false"
-        app:fragment="com.termux.app.fragments.settings.TermuxTaskerPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.TermuxTaskerPreferencesFragment"/>
     <Preference
         app:key="termux_widget"
         app:title="@string/termux_widget_preferences_title"
         app:summary="@string/termux_widget_preferences_summary"
         app:isPreferenceVisible="false"
-        app:fragment="com.termux.app.fragments.settings.TermuxWidgetPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.TermuxWidgetPreferencesFragment"/>
     <Preference
         app:key="about"
         app:title="@string/about_preference_title"
@@ -2095,7 +2095,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
         <intent
             android:action="android.intent.action.RUN"
             android:targetPackage="com.termux"
-            android:targetClass="com.termux.app.TermuxActivity"
+            android:targetClass="com.Foundain.app.TermuxActivity"
             android:name="android.shortcut.conversation"/>
     </shortcut>
     <shortcut
@@ -2107,9 +2107,9 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
         <intent
             android:action="android.intent.action.RUN"
             android:targetPackage="com.termux"
-            android:targetClass="com.termux.app.TermuxActivity"
+            android:targetClass="com.Foundain.app.TermuxActivity"
             android:name="android.shortcut.conversation">
-            <extra android:name="com.termux.app.failsafe_session" android:value="true"/>
+            <extra android:name="com.Foundain.app.failsafe_session" android:value="true"/>
         </intent>
     </shortcut>
     <shortcut
@@ -2121,7 +2121,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
         <intent
             android:action="android.intent.action.VIEW"
             android:targetPackage="com.termux"
-            android:targetClass="com.termux.app.activities.SettingsActivity"
+            android:targetClass="com.Foundain.app.activities.SettingsActivity"
             android:name="android.shortcut.conversation"/>
     </shortcut>
 </shortcuts>
@@ -2146,7 +2146,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
     <Preference
         app:title="@string/termux_debugging_preferences_title"
         app:summary="@string/termux_debugging_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.termux_api.DebuggingPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.termux_api.DebuggingPreferencesFragment"/>
 </PreferenceScreen>
 </file>
 
@@ -2203,7 +2203,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
     <Preference
         app:title="@string/termux_debugging_preferences_title"
         app:summary="@string/termux_debugging_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.termux_float.DebuggingPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.termux_float.DebuggingPreferencesFragment"/>
 </PreferenceScreen>
 </file>
 
@@ -2212,15 +2212,15 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
     <Preference
         app:title="@string/termux_debugging_preferences_title"
         app:summary="@string/termux_debugging_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.termux.DebuggingPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.termux.DebuggingPreferencesFragment"/>
     <Preference
         app:title="@string/termux_terminal_io_preferences_title"
         app:summary="@string/termux_terminal_io_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.termux.TerminalIOPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.termux.TerminalIOPreferencesFragment"/>
     <Preference
         app:title="@string/termux_terminal_view_preferences_title"
         app:summary="@string/termux_terminal_view_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.termux.TerminalViewPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.termux.TerminalViewPreferencesFragment"/>
 </PreferenceScreen>
 </file>
 
@@ -2243,7 +2243,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
     <Preference
         app:title="@string/termux_debugging_preferences_title"
         app:summary="@string/termux_debugging_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.termux_tasker.DebuggingPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.termux_tasker.DebuggingPreferencesFragment"/>
 </PreferenceScreen>
 </file>
 
@@ -2299,7 +2299,7 @@ public class TermuxDocumentsProvider extends DocumentsProvider {
     <Preference
         app:title="@string/termux_debugging_preferences_title"
         app:summary="@string/termux_debugging_preferences_summary"
-        app:fragment="com.termux.app.fragments.settings.termux_widget.DebuggingPreferencesFragment"/>
+        app:fragment="com.Foundain.app.fragments.settings.termux_widget.DebuggingPreferencesFragment"/>
 </PreferenceScreen>
 </file>
 
@@ -6371,18 +6371,18 @@ public final class TermuxConstants {
         public static final String APPS_DIR_PATH = TERMUX_APPS_DIR_PATH + "/" + TERMUX_PACKAGE_NAME; // Default: "/data/data/com.termux/files/apps/com.termux"
         public static final String TERMUX_AM_SOCKET_FILE_PATH = APPS_DIR_PATH + "/termux-am/am.sock"; // Default: "/data/data/com.termux/files/apps/com.termux/termux-am/am.sock"
         public static final String BUILD_CONFIG_CLASS_NAME = TERMUX_PACKAGE_NAME + ".BuildConfig"; // Default: "com.termux.BuildConfig"
-        public static final String FILE_SHARE_RECEIVER_ACTIVITY_CLASS_NAME = TERMUX_PACKAGE_NAME + ".app.api.file.FileShareReceiverActivity"; // Default: "com.termux.app.api.file.FileShareReceiverActivity"
-        public static final String FILE_VIEW_RECEIVER_ACTIVITY_CLASS_NAME = TERMUX_PACKAGE_NAME + ".app.api.file.FileViewReceiverActivity"; // Default: "com.termux.app.api.file.FileViewReceiverActivity"
-        public static final String TERMUX_ACTIVITY_NAME = TERMUX_PACKAGE_NAME + ".app.TermuxActivity"; // Default: "com.termux.app.TermuxActivity"
+        public static final String FILE_SHARE_RECEIVER_ACTIVITY_CLASS_NAME = TERMUX_PACKAGE_NAME + ".app.api.file.FileShareReceiverActivity"; // Default: "com.Foundain.app.api.file.FileShareReceiverActivity"
+        public static final String FILE_VIEW_RECEIVER_ACTIVITY_CLASS_NAME = TERMUX_PACKAGE_NAME + ".app.api.file.FileViewReceiverActivity"; // Default: "com.Foundain.app.api.file.FileViewReceiverActivity"
+        public static final String TERMUX_ACTIVITY_NAME = TERMUX_PACKAGE_NAME + ".app.TermuxActivity"; // Default: "com.Foundain.app.TermuxActivity"
         public static final class TERMUX_ACTIVITY {
-            public static final String EXTRA_FAILSAFE_SESSION = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.failsafe_session"; // Default: "com.termux.app.failsafe_session"
-            public static final String ACTION_NOTIFY_APP_CRASH = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.notify_app_crash"; // Default: "com.termux.app.notify_app_crash"
-            public static final String ACTION_RELOAD_STYLE = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.reload_style"; // Default: "com.termux.app.reload_style"
-            public static final String EXTRA_RELOAD_STYLE = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.reload_style"; // Default: "com.termux.app.reload_style"
-            public static final String EXTRA_RECREATE_ACTIVITY = TERMUX_APP.TERMUX_ACTIVITY_NAME + ".EXTRA_RECREATE_ACTIVITY"; // Default: "com.termux.app.TermuxActivity.EXTRA_RECREATE_ACTIVITY"
-            public static final String ACTION_REQUEST_PERMISSIONS = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.request_storage_permissions"; // Default: "com.termux.app.request_storage_permissions"
-        public static final String TERMUX_SETTINGS_ACTIVITY_NAME = TERMUX_PACKAGE_NAME + ".app.activities.SettingsActivity"; // Default: "com.termux.app.activities.SettingsActivity"
-        public static final String TERMUX_SERVICE_NAME = TERMUX_PACKAGE_NAME + ".app.TermuxService"; // Default: "com.termux.app.TermuxService"
+            public static final String EXTRA_FAILSAFE_SESSION = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.failsafe_session"; // Default: "com.Foundain.app.failsafe_session"
+            public static final String ACTION_NOTIFY_APP_CRASH = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.notify_app_crash"; // Default: "com.Foundain.app.notify_app_crash"
+            public static final String ACTION_RELOAD_STYLE = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.reload_style"; // Default: "com.Foundain.app.reload_style"
+            public static final String EXTRA_RELOAD_STYLE = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.reload_style"; // Default: "com.Foundain.app.reload_style"
+            public static final String EXTRA_RECREATE_ACTIVITY = TERMUX_APP.TERMUX_ACTIVITY_NAME + ".EXTRA_RECREATE_ACTIVITY"; // Default: "com.Foundain.app.TermuxActivity.EXTRA_RECREATE_ACTIVITY"
+            public static final String ACTION_REQUEST_PERMISSIONS = TermuxConstants.TERMUX_PACKAGE_NAME + ".app.request_storage_permissions"; // Default: "com.Foundain.app.request_storage_permissions"
+        public static final String TERMUX_SETTINGS_ACTIVITY_NAME = TERMUX_PACKAGE_NAME + ".app.activities.SettingsActivity"; // Default: "com.Foundain.app.activities.SettingsActivity"
+        public static final String TERMUX_SERVICE_NAME = TERMUX_PACKAGE_NAME + ".app.TermuxService"; // Default: "com.Foundain.app.TermuxService"
         public static final class TERMUX_SERVICE {
             public static final String ACTION_STOP_SERVICE = TERMUX_PACKAGE_NAME + ".service_stop"; // Default: "com.termux.service_stop"
             public static final String ACTION_WAKE_LOCK = TERMUX_PACKAGE_NAME + ".service_wake_lock"; // Default: "com.termux.service_wake_lock"
@@ -6423,7 +6423,7 @@ public final class TermuxConstants {
             public static final String EXTRA_PLUGIN_RESULT_BUNDLE_EXIT_CODE = "exitCode"; // Default: "exitCode"
             public static final String EXTRA_PLUGIN_RESULT_BUNDLE_ERR = "err"; // Default: "err"
             public static final String EXTRA_PLUGIN_RESULT_BUNDLE_ERRMSG = "errmsg"; // Default: "errmsg"
-        public static final String RUN_COMMAND_SERVICE_NAME = TERMUX_PACKAGE_NAME + ".app.RunCommandService"; // Termux app service to receive commands from 3rd party apps "com.termux.app.RunCommandService"
+        public static final String RUN_COMMAND_SERVICE_NAME = TERMUX_PACKAGE_NAME + ".app.RunCommandService"; // Termux app service to receive commands from 3rd party apps "com.Foundain.app.RunCommandService"
         public static final class RUN_COMMAND_SERVICE {
             public static final String RUN_COMMAND_API_HELP_URL = TERMUX_GITHUB_WIKI_REPO_URL + "/RUN_COMMAND-Intent"; // Default: "https://github.com/termux/termux-app/wiki/RUN_COMMAND-Intent"
             public static final String ACTION_RUN_COMMAND = TERMUX_PACKAGE_NAME + ".RUN_COMMAND"; // Default: "com.termux.RUN_COMMAND"

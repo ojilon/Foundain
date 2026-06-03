@@ -1,4 +1,4 @@
-package com.termux.app.fragments.settings.termux;
+package com.Foundain.app.fragments.settings.termux;
 
 import android.content.Context;
 import android.os.Bundle;

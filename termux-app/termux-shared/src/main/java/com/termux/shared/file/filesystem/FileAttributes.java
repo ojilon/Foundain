@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.termux.shared.file.filesystem;
+package com.Foundain.shared.file.filesystem;
 
 import android.os.Build;
 import android.system.StructStat;

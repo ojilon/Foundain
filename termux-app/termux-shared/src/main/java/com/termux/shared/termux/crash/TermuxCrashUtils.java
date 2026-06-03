@@ -1,4 +1,4 @@
-package com.termux.shared.termux.crash;
+package com.Foundain.shared.termux.crash;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -11,23 +11,23 @@ import android.os.Environment;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.termux.shared.activities.ReportActivity;
-import com.termux.shared.android.AndroidUtils;
-import com.termux.shared.crash.CrashHandler;
-import com.termux.shared.data.DataUtils;
-import com.termux.shared.errors.Error;
-import com.termux.shared.file.FileUtils;
-import com.termux.shared.logger.Logger;
-import com.termux.shared.markdown.MarkdownUtils;
-import com.termux.shared.models.ReportInfo;
-import com.termux.shared.notification.NotificationUtils;
-import com.termux.shared.termux.TermuxConstants;
-import com.termux.shared.termux.TermuxConstants.TERMUX_APP;
-import com.termux.shared.termux.TermuxUtils;
-import com.termux.shared.termux.models.UserAction;
-import com.termux.shared.termux.notification.TermuxNotificationUtils;
-import com.termux.shared.termux.settings.preferences.TermuxAppSharedPreferences;
-import com.termux.shared.termux.settings.preferences.TermuxPreferenceConstants;
+import com.Foundain.shared.activities.ReportActivity;
+import com.Foundain.shared.android.AndroidUtils;
+import com.Foundain.shared.crash.CrashHandler;
+import com.Foundain.shared.data.DataUtils;
+import com.Foundain.shared.errors.Error;
+import com.Foundain.shared.file.FileUtils;
+import com.Foundain.shared.logger.Logger;
+import com.Foundain.shared.markdown.MarkdownUtils;
+import com.Foundain.shared.models.ReportInfo;
+import com.Foundain.shared.notification.NotificationUtils;
+import com.Foundain.shared.termux.TermuxConstants;
+import com.Foundain.shared.termux.TermuxConstants.TERMUX_APP;
+import com.Foundain.shared.termux.TermuxUtils;
+import com.Foundain.shared.termux.models.UserAction;
+import com.Foundain.shared.termux.notification.TermuxNotificationUtils;
+import com.Foundain.shared.termux.settings.preferences.TermuxAppSharedPreferences;
+import com.Foundain.shared.termux.settings.preferences.TermuxPreferenceConstants;
 
 import java.nio.charset.Charset;
 
@@ -129,7 +129,7 @@ public class TermuxCrashUtils implements CrashHandler.CrashHandlerClient {
     /**
      * Notify the user of an app crash by reading the crash info from the crash log file
      * at {@link TermuxConstants#TERMUX_CRASH_LOG_FILE_PATH}. The crash log file would have been
-     * created by {@link com.termux.shared.crash.CrashHandler}.
+     * created by {@link com.Foundain.shared.crash.CrashHandler}.
      *
      * If the crash log file exists and is not empty and
      * {@link TermuxPreferenceConstants.TERMUX_APP#KEY_CRASH_REPORT_NOTIFICATIONS_ENABLED} is

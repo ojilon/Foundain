@@ -1,4 +1,4 @@
-package com.termux.app.terminal;
+package com.Foundain.app.terminal;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 import com.termux.shared.logger.Logger;
 import com.termux.shared.view.ViewUtils;
 

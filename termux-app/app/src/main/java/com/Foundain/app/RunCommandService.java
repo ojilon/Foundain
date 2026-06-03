@@ -1,4 +1,4 @@
-package com.termux.app;
+package com.Foundain.app;
 
 import android.app.Notification;
 import android.app.NotificationManager;

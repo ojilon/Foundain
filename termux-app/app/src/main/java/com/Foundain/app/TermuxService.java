@@ -1,4 +1,4 @@
-package com.termux.app;
+package com.Foundain.app;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -19,9 +19,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.termux.R;
-import com.termux.app.event.SystemEventReceiver;
-import com.termux.app.terminal.TermuxTerminalSessionActivityClient;
-import com.termux.app.terminal.TermuxTerminalSessionServiceClient;
+import com.Foundain.app.event.SystemEventReceiver;
+import com.Foundain.app.terminal.TermuxTerminalSessionActivityClient;
+import com.Foundain.app.terminal.TermuxTerminalSessionServiceClient;
 import com.termux.shared.termux.plugins.TermuxPluginUtils;
 import com.termux.shared.data.IntentUtils;
 import com.termux.shared.net.uri.UriUtils;

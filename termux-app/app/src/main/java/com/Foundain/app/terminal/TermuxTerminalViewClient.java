@@ -1,4 +1,4 @@
-package com.termux.app.terminal;
+package com.Foundain.app.terminal;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -18,7 +18,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.termux.R;
-import com.termux.app.TermuxActivity;
+import com.Foundain.app.TermuxActivity;
 import com.termux.shared.file.FileUtils;
 import com.termux.shared.interact.MessageDialogUtils;
 import com.termux.shared.interact.ShareUtils;
@@ -30,8 +30,8 @@ import com.termux.shared.android.AndroidUtils;
 import com.termux.shared.termux.TermuxConstants;
 import com.termux.shared.activities.ReportActivity;
 import com.termux.shared.models.ReportInfo;
-import com.termux.app.models.UserAction;
-import com.termux.app.terminal.io.KeyboardShortcut;
+import com.Foundain.app.models.UserAction;
+import com.Foundain.app.terminal.io.KeyboardShortcut;
 import com.termux.shared.termux.settings.properties.TermuxPropertyConstants;
 import com.termux.shared.data.DataUtils;
 import com.termux.shared.logger.Logger;

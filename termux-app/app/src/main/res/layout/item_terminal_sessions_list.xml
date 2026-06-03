@@ -5,5 +5,6 @@
     android:background="@drawable/session_background_selected"
     android:ellipsize="marquee"
     android:gravity="start|center_vertical"
-    android:padding="6dip"
-    android:textSize="14sp" />
+    android:padding="8dip"
+    android:textSize="16sp" />
+<!--edit the look of each session-->
